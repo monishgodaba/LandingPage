@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div><img src="images/innomatics2.jpg" alt="Description of image" class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="tel:+1234567890" class="call-button">Call Us</a></li>
+                <li class="dropdown">
+                    <a href="#">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="mission.html">Our Mission</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Programs</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="programs.html">All Programs</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Testimonials</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="testimonials.html">User Reviews</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="btn-secondary" href="signup.html">Get Started</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+        
+            <div class="slides">
+                <div class="slide">
+                    <label for="slide1" class="slide-image"><img src="images/full stack3.jpg" alt="Image 1"></label>
+                    <label for="slide2" class="arrow next">&#10095;</label>
+                </div>
+                <div class="slide">
+                    <label for="slide2" class="slide-image"><img src="images/data science2.jpg" alt="Image 2"></label>
+                    <label for="slide3" class="arrow next">&#10095;</label>
+                    <label for="slide1" class="arrow prev">&#10094;</label>
+                </div>
+                <div class="slide">
+                    <label for="slide3" class="slide-image"><img src="images/java2.jpg" alt="Image 3"></label>
+                    <label for="slide1" class="arrow prev">&#10094;</label>
+                </div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="roboto-slab-bold">We just don’t train,</h1>
+                   <h1 class="roboto-slab-bold"> We transform the careers</h1> 
+           
+                <p class="roboto-slab-regular">Your journey to success starts here.</p>
+                <a class="btn-primary" href="signup.html">Sign Up</a>
+                </div>
+                
+        </div>
+                
+    </section>
+    
+    
+
+    <section class="programs">
+        <h2 class="roboto-slab-bold">Our Programs</h2>
+        <div class="program-cards">
+            <div class="program-card">
+                <img src="images/full stack2.jpg" alt="Program 1">
+                <h3 class="roboto-slab-bold">FULL STACK</h3>
+                <p class="roboto-slab-regular">Learn the right skills to break into a development career & advance yourself as a full-stack Developer. It includes Frontend, Backend, databases, debugging & testing.</p>
+                <a class="btn-link" href="#">Learn More</a>
+            </div>
+            <div class="program-card">
+                <img src="images/data science.jpg" alt="Program 2">
+                <h3 class="roboto-slab-bold">DATA SCIENCE</h3>
+                <p class="roboto-slab-regular">Data science is a field that has emerged as an essential job avenue and has a wide range of real-time applications....</p>
+                <a class="btn-link" href="#">Learn More</a>
+            </div>
+            <div class="program-card">
+                <img src="images/java.jpg" alt="Program 3">
+                <h3 class="roboto-slab-bold">JAVA</h3>
+                <p class="roboto-slab-regular">Java is a multi-platform, object-oriented programming language that's used to develop a wide range of applications</p>
+                <a class="btn-link" href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 class="roboto-slab-bold">What Our Users Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p class="roboto-slab-regular">"This is an amazing service!" - Maxton</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="roboto-slab-regular">"I love using this platform!" - Hall</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="roboto-slab-regular">"Highly recommend to everyone!" - Stephen</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">
+                    <img src="images/facebook.jpg" alt="Facebook" class="social-icon">
+                </a>
+                <a href="#">
+                    <img src="images/twitter.jpg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="#">
+                    <img src="images/linkedin.jpg" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+

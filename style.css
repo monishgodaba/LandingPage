@@ -1,0 +1,471 @@
+/* Main body and general reset */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff9e6; /* Light yellow background */
+    color: #333; /* Dark text */
+    scroll-behavior: smooth;
+}
+
+.roboto-slab-light {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-slab-regular {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-slab-bold {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffeb3b;
+}
+
+.logo {
+    max-width: 100%; /* Make sure the image doesn't overflow */
+    height: auto; /* Keep aspect ratio */
+    display: inline-block;
+}
+
+.call-button {
+    background-color: #ff9800; /* Orange background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded edges */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.call-button:hover {
+    background-color: #fb8c00; /* Darker orange on hover */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d6a600; /* Darker yellow on hover */
+}
+
+/* Call to Action button */
+.btn-secondary {
+    background-color: #800000; /* Golden yellow button color */
+    color: white; /* Dark text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.btn-secondary:hover {
+    background-color: #f0c200; /* Darker golden yellow on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+
+.btn-primary {
+    background-color: #ff6600; /* Primary button color */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+}
+
+/* Programs section */
+.programs {
+    padding: 80px 10%;
+    background-color: #3fcde6; /* White background */
+    text-align: center; /* Centered text */
+}
+
+.program-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+.program-card {
+    background-color: #fff; /* White background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position for hover effect */
+    overflow: hidden; /* Hide overflow for card flip */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.program-card:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.program-card img {
+    width: 80px;
+    margin-bottom: 20px;
+    transition: transform 0.3s; /* Transition for image */
+}
+
+.program-card:hover img {
+    transform: rotate(15deg); /* Rotate image on hover */
+}
+
+.btn-link {
+    color: #0066cc; /* Blue link color */
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: #004b99; /* Darker blue link color */
+}
+
+/* Testimonials section */
+.testimonials {
+    background-color: #3fcde6; /* Yellow section */
+    color: #333; /* Dark text */
+    padding: 80px 10%;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #3fcde6; /* Yellow footer */
+    color: #333; /* Dark text */
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.social-icon {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 8px;
+    transition: transform 0.3s; /* Add hover effect */
+    border-radius: 5px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.social-links {
+    display: flex; /* Ensure items are displayed in a row */
+    align-items: center; /* Align items vertically */
+}
+
+.social-links a {
+    margin: 0; /* Remove any margin from anchor tags */
+    padding: 0; /* Remove padding from anchor tags */
+}
+
+
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Us and Get Started Sections */
+.contact-section,
+.get-started-section {
+    background: linear-gradient(135deg, #ffeb3b, #fff); /* Yellow to white gradient */
+    color: #000;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+form {
+    background: #fff; /* White form background */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ffb300; /* Yellow border color on focus */
+    box-shadow: 0 0 5px rgba(255, 179, 0, 0.5); /* Subtle glow effect */
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px; /* Adjusted padding */
+    background-color: #ff9800; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #fb8c00; /* Darker orange on hover */
+    transform: translateY(-2px); /* Slight elevation */
+}
+
+h1 {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+p {
+    margin-bottom: 15px; /* Spacing below paragraphs */
+    color: #000; /* Black text */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .program-cards,
+    .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program-card {
+        width: 90%; /* Make cards responsive */
+    }
+}  
+
+
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #ffeb3b; /* Match your header color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.nav-links li {
+    position: relative; /* To position the dropdown */
+}
+
+.nav-links li:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: #333; /* Dark text */
+    text-decoration: none;
+    display: block;
+}
+.hero-content {
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+    justify-content: space-between;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 20px; /* Adds some space between text and image */
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(135deg, #ffd700, #ffeb3b); /* Yellow gradient background */
+    color: black; /* White text */
+    padding: 150px 50px;
+    text-align: center;
+    border-bottom: 5px solid #fff; /* Bottom border */
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.hero-section {
+    position: relative; /* Allow positioning of child elements */
+}
+
+.hero-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    display: none;
+    min-width: 100%;
+}
+
+input[name="slider"]:nth-of-type(1):checked ~ .slides .slide:nth-of-type(1),
+input[name="slider"]:nth-of-type(2):checked ~ .slides .slide:nth-of-type(2),
+input[name="slider"]:nth-of-type(3):checked ~ .slides .slide:nth-of-type(3) {
+    display: block;
+}
+
+input[name="slider"] {
+    display: none; /* Hide radio buttons */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.arrow.prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.arrow.next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.slide-image {
+    cursor: pointer;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh; /* Adjust this value as needed */
+    object-fit: cover;
+}
+
+
+
+.logo{
+    width: 200px;
+    height: auto;
+    opacity: 0.7;
+    transition: transform 0.3s, opacity 0.3s; /* Add opacity transition */
+    transform-origin: center; /* Set transform origin to center */
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .slide img {
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-secondary {
+        align-self: flex-end;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
